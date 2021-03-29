@@ -89,7 +89,7 @@ class PostCard extends StatelessWidget {
                   children: [
                     Text('Location: ', style: TextStyle(color: Colors.white)),
                     Text(
-                      '(${post.longitude}), (${post.latitude})',
+                      '(${post.longitude.toStringAsFixed(2)}), (${post.latitude.toStringAsFixed(2)})',
                       style: TextStyle(
                         color: Color(0xFF50fa7b),
                       ),

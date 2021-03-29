@@ -33,7 +33,7 @@ class _PostDisplayState extends State<PostDisplay> {
   void getApproveAmount() {
     showDialog(
       context: context,
-      child: AlertDialog(
+      builder: (context) => AlertDialog(
         title: Text('Points Reward Amount'),
         content: TextField(
           controller: pointsController,
